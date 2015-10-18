@@ -1,5 +1,5 @@
-<h3><%= @pin.name %></h3>
-<p><%= @pin.url %></p>
-<img src="<%= @pin.image %>" >
-
-<%= link_to 'Destroy',  @yoyo,  method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= render "navbar" %>
+<h2><%= @pin.url %></h2>
+<h4><%= @pin.name %></h4>
+<img src="<%= @pin.image %>"><br />
+<%= link_to 'Destroy',  @pin,  method: :delete, data: { confirm: 'Are you sure?' } %>
