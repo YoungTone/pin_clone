@@ -1,11 +1,11 @@
-<h4>Edit Pin</h4>
-
+<%= render "navbar" %>
+<h4>Edit</h4>
 <%= form_for @pin do |f| %>
-  <%= f.label "Url" %>
+  <%= f.label "Url:" %>
   <%= f.text_field :url %><br />
-  <%= f.label "Comment" %>
+  <%= f.label "Comment:" %>
   <%= f.text_field :name %><br />
-  <%= f.label "Image" %>
+  <%= f.label "Image:" %>
   <%= f.text_field :image %><br />
-  <%= f.submit "Edit Pin" %>
+  <%= f.submit "Edit" %>
 <% end %>

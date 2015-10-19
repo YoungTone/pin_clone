@@ -1,5 +1,6 @@
 <%= render "navbar" %>
-<h2><%= @pin.url %></h2>
+<h2><a href="<%= @pin.url%>"><%= @pin.url%></a></h2> 
 <h4><%= @pin.name %></h4>
-<img src="<%= @pin.image %>"><br />
-<%= link_to 'Destroy',  @pin,  method: :delete, data: { confirm: 'Are you sure?' } %>
+<img src="<%= @pin.image %>" style="width:350px"><br />
+<a class="btn btn-default" href="/pins/<%= @pin.id %>/edit" class="text-center" role="button">Edit</a>
+ <div class="btn btn-default" role="button"><%= link_to 'Delete', @pin, method: :delete, data: {confirm: "Are you sure?"} %>

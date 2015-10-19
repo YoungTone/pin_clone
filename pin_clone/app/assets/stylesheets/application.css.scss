@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+// Example using bootswatch
+//
+// First import  variables
+@import "bootswatch/Flatly/variables";
+
+// Then bootstrap itself
+@import "bootstrap";
+
+// And finally bootswatch style itself
+@import "bootswatch/Flatly/bootswatch";
+
+// If you want to import your own styles just use 
+
+@import "pins.scss"
